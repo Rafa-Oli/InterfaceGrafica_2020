@@ -3,7 +3,7 @@ function verificarMaior() {
     numeros = numeros.split(",");
     var maiorValor = 0;
     for (i = 0; i < numeros.length; i++) {
-        if (numeros[i] > maiorValor) {
+        if (parseInt(numeros[i]) > maiorValor) {
             maiorValor = parseInt(numeros[i]);
         }
 
