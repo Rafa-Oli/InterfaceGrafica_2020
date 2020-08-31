@@ -16,11 +16,11 @@ function CalcularValores() {
     media = soma / numeros.length;
     percentualPosi= (positivos/numeros.length)*100;
     percentualNeg= (negativos/numeros.length)*100;
-    document.write("A média dos números é " + media + "<hr>");
+    document.write("A média dos números é " + media.toFixed(2) + "<hr>");
     document.write("A quantidade de números positivos é " + positivos + "<hr>");
     document.write("A quantidade de números negativos é " + negativos + "<hr>");
-    document.write("O percentual de números positivos é " + percentualPosi + "<hr>");
-    document.write("O percentual de números negativos é " + percentualNeg + "<hr>");
+    document.write("O percentual de números positivos é " + percentualPosi.toFixed(2) + "%" + "<hr>");
+    document.write("O percentual de números negativos é " + percentualNeg.toFixed(2) + "%" + "<hr>");
 }
 
 //-20,40,30,-45,12,13
