@@ -4,8 +4,10 @@ function CalcularValores() {
     var soma = 0;
     var positivos = 0;
     var negativos = 0;
+    var quantidade=0;
     for (i = 0; i < numeros.length; i++) {
         soma += parseInt(numeros[i]);
+        quantidade++;
         if (parseInt(numeros[i]) > 0) {
             positivos++;
         } else {
@@ -13,10 +15,10 @@ function CalcularValores() {
         }
 
     }
-    media = soma / numeros.length;
+    media =parseFloat(soma / numeros.length);
     percentualPosi= (positivos/numeros.length)*100;
     percentualNeg= (negativos/numeros.length)*100;
-    document.write("A média dos números é " + media.toFixed(2) + "<hr>");
+    document.write("A média dos números é " + media + "<hr>");
     document.write("A quantidade de números positivos é " + positivos + "<hr>");
     document.write("A quantidade de números negativos é " + negativos + "<hr>");
     document.write("O percentual de números positivos é " + percentualPosi.toFixed(2) + "%" + "<hr>");
