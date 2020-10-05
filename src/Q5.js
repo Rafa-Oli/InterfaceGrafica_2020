@@ -1,5 +1,5 @@
 
-function isPrime2({inicio = 0,fim= 100}) {
+function isPrime({inicio = 0,fim= 100}) {
     let texto= '';
     for(let count = inicio ; count<= fim ; count++){
         divisores=0;

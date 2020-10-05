@@ -1,16 +1,12 @@
 var readline = require('readline');
 var resp = 0;
 
-var leitor = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
 
-leitor.question("Digite o valor monetário\n", function(answer) {
-    var resp = answer;
-    nota(resp)
-    leitor.close();
-});
+const valor = lines.shift();
+let n = parseFloat(valor);
+nota(n)
 
 function nota(valor) {
     //NOTAS
