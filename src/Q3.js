@@ -6,3 +6,4 @@ const conceitos = notas.forEach(function(nota){
     else if(nota >= 7.0 && nota <= 8.9) console.log('B')
     else if(nota >= 9.0 && nota <= 10) console.log('A')
 })
+
