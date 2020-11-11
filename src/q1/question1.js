@@ -1,11 +1,12 @@
 function map() {
 
+
 }
 
 
 function executaTeste() {
     const array = [1, 2, 3, 4, 5];
-    const arrayTriplicado = array.map((num) => num * 3, array);
+    const arrayTriplicado = map((num) => num * 3, array);
     if (_.isEqual(arrayTriplicado, [3, 6, 9, 12, 15])) {
         console.log('✓ Passou no teste!')
     } else {
