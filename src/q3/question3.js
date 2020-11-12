@@ -8,12 +8,12 @@ let entrada = readline.createInterface({
 
 entrada.question('Digite a data de entrega', (E) => {
     let nums= E.split(" ")
-    verifica(nums[0], nums[1]);
+    verifica(parseInt(nums[0]), parseInt(nums[1]));
 });
 
 function verifica(E,D){
-
     console.log(E,D)
+
 
 
 }

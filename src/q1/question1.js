@@ -1,4 +1,4 @@
-var isEqual = require('lodash.isequal');
+const lodash= require("lodash")
 
 function map(func,array) {
   
@@ -15,8 +15,8 @@ function executaTeste() {
     const arrayTriplicado = map((num) => num * 3, array);
 
     console.log(arrayTriplicado)
-    const equal = _.eq(arrayTriplicado, [3, 6, 9, 12, 15])
-    if (equal) {
+   
+    if (lodash.isEqual(arrayTriplicado, [3, 6, 9, 12, 15])) {
         console.log('✓ Passou no teste!')
     } else {
         console.error('O teste falhou :(')
